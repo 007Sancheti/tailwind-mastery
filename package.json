@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-mastery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i src/styles.css -o public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/007Sancheti/tailwind-mastery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/007Sancheti/tailwind-mastery/issues"
+  },
+  "homepage": "https://github.com/007Sancheti/tailwind-mastery#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.9"
+  }
+}
