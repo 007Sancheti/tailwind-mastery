@@ -1,4 +1,70 @@
 /* tailwindcss utility classes */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    a {
+        @apply text-blue-600 underline;
+    }
+}
+
+@layer utilities {
+    .p-21 {
+        padding: 5.5rem;
+    }
+    @variants hover, focus {
+        .p-21 {
+            padding: 5.5rem;
+        }
+    }
+}
+
+@layer components {
+    .btn-green {
+        @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700;
+    }
+}
+
+/* .btn {
+    @apply text-indigo-light py-2 px-4 font-semibold;
+} */
+
+@responsive {
+    .rotate-0 {
+        transform: rotate(0 deg);
+    }
+}
+
+
+/* screen() */
+
+/*
+
+@media screen(md) {
+    .rotate-90 {
+        transform: rotate(90 deg);
+    }
+}
+
+@screen sm {
+    .rotate-90 {
+        transform: rotate(90 deg);
+    }
+}
+
+.content-area {
+    height: theme('height.60');
+}
+
+*/
+
+input::placeholder {
+    color: black;
+}
+
+.bg-content {
+    @apply active:bg-indigo-400;
+}
